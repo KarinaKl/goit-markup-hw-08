@@ -1,0 +1,19 @@
+.logo {
+  font-family: 'Raleway', sans-serif;
+  text-decoration: none;
+  color: var(--blue-text-color);
+  @include font(700, 26px, 1.19, 0.03em);
+
+  &__accent {
+    color: var(--black-text-color);
+  }
+
+  &__accent--inverse {
+    color: var(--white-color);
+  }
+}
+.page-footer__logo {
+  @include font(700, 26px, 1.19, 0.03em);
+  display: block;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,38 @@
+.section--no-padding-top {
+  padding-top: 0;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+.about__title {
+  @include font(700, 36px, 1.17, 0.03em);
+  text-align: center;
+  color: var(--black-main-color);
+  margin-bottom: 50px;
+}
+
+.about {
+  display: flex;
+  gap: 30px;
+}
+/* Текст з фоном */
+.about__item {
+  position: relative;
+}
+.about__text {
+  position: absolute;
+  display: flex;
+
+  @include font(700, 14px, 1.14, 0.03em);
+  text-align: center;
+  text-transform: uppercase;
+
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70px;
+  bottom: 0px;
+  color: var(--white-color);
+  background-color: rgba(47, 48, 58, 0.8);
+}

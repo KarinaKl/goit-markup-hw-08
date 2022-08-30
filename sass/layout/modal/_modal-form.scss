@@ -1,0 +1,77 @@
+.order-form {
+  text-align: center;
+
+  &__title {
+    @include font(700, 20px, 1.15, 0.03em);
+    text-align: center;
+    margin-bottom: 12px;
+  }
+}
+.form-field {
+  margin-bottom: 10px;
+  text-align: start;
+
+  &__label {
+    @include font(null, 12px, 1.17, 0.01em);
+    color: var(--grey-text-color);
+    display: block;
+    margin-bottom: 4px;
+  }
+  &__wrap {
+    position: relative;
+  }
+}
+.form-field__input {
+  width: 100%;
+  height: 40px;
+  padding-left: 35px;
+  outline: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    border-color: var(--blue-text-color);
+  }
+}
+
+.form-field__icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .form-field__input:focus + &,
+  .form-field__input:hover + & {
+    fill: var(--blue-text-color); /* зміна кольору при фокусі іконки */
+  }
+}
+
+.form-field--obversely {
+  margin-bottom: 20px;
+}
+.form-field__comment {
+  @include font(null, 12px, 1.17, 0.01em);
+  display: block;
+  resize: none;
+  height: 120px;
+  width: 448px;
+  padding: 12px 16px;
+  outline: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    border-color: var(--blue-text-color);
+  }
+}
+.form-field__comment::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
