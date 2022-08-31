@@ -1005,10 +1005,6 @@ body {
   background-color: var(--bg-section-color);
 }
 
-.gallery {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
 @media screen and (min-width: 768px) {
   .gallery {
     display: -webkit-box;
@@ -1029,7 +1025,7 @@ body {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .gallery__item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -1045,6 +1041,10 @@ body {
     -ms-flex-preferred-size: calc((100% - 90px) / 4);
         flex-basis: calc((100% - 90px) / 4);
   }
+}
+
+.gallery__item img {
+  width: 100%;
 }
 
 .gallery__box {
@@ -1256,14 +1256,6 @@ body {
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.card-set {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 30px;
-}
 @media screen and (min-width: 768px) {
   .card-set {
     display: -webkit-box;
@@ -1271,11 +1263,11 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    gap: 30px;
   }
 }
 
 .card-set__item {
-  max-width: 480px;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
@@ -1307,6 +1299,11 @@ body {
 .card-set__link:hover, .card-set__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
 }
 
 .card__content {
