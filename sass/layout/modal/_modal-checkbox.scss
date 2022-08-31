@@ -2,12 +2,15 @@
   margin-bottom: 30px;
 }
 .checkbox-wrap__label {
-  @include font(null, 14px, 1.7, 0.01em);
+  @include font(null, 12px, 1.2, 0.03em);
   color: var(--grey-text-color);
   display: flex;
   justify-content: center;
   align-items: center;
-
+  flex-wrap: wrap;
+  @include desktop {
+    @include font(null, 14px, 1.7, 0.01em);
+  }
   span {
     width: 16px;
     height: 15px;
