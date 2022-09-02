@@ -130,6 +130,12 @@ body {
   margin-bottom: 20px;
 }
 
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: painted;
+}
+
 .menu-open {
   padding: 0;
   width: 40px;
@@ -409,6 +415,11 @@ body {
   border-radius: 2px;
 }
 
+@media screen and (max-width: 767px) {
+  .contacts-list {
+    display: none;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts-list {
     -webkit-box-orient: vertical;
