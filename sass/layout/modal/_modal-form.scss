@@ -12,6 +12,7 @@
   text-align: start;
 
   &__label {
+    display: block;
     @include font(null, 12px, 1.17, 0.01em);
     color: var(--grey-text-color);
     display: block;

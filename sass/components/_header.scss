@@ -2,14 +2,16 @@
   border-bottom: 1px solid #d9d9d9;
   background-color: var(--white-color);
   @media screen and (max-width: 767px) {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 .page-header__container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+  }
   @include desktop {
     display: flex;
     justify-content: space-between;
@@ -19,11 +21,14 @@
 .nav {
   display: flex;
   align-items: center;
+  margin-left: 87px;
+  @include desktop {
+    margin-left: 92px;
+  }
 }
 .site-nav {
   display: flex;
   gap: 50px;
-  margin-left: 88px;
   @media screen and (max-width: 767px) {
     display: none;
   }
@@ -78,6 +83,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 6px;
+    margin-left: auto;
   }
   @media screen and(min-width: 1200px) {
     display: flex;

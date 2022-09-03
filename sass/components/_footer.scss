@@ -10,18 +10,13 @@
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-    justify-content: center;
+    justify-content: space-around;
   }
 }
 .page-footer__block {
   @media screen and (max-width: 1199px) {
     margin-bottom: 60px;
   }
-
-  @include tablet {
-    width: calc(100% / 2);
-  }
-
   @include desktop {
     margin-right: 94px;
     width: auto;
@@ -55,11 +50,6 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
   }
-
-  @include tablet {
-    width: calc(100% / 2);
-  }
-
   @include desktop {
     margin-right: auto;
     width: auto;
