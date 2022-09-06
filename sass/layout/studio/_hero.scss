@@ -1,8 +1,8 @@
 .hero {
   padding-top: 118px;
   padding-bottom: 118px;
+  height: 400px;
   text-align: center;
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--bg-grey-color);
@@ -21,6 +21,7 @@
   }
 
   @include tablet {
+    height: 400px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/hero-bg-tablet.jpg');
 
@@ -35,8 +36,9 @@
 
   @media desktop {
     padding: 200px 0;
-    margin-right: auto;
-    margin-left: auto;
+    // margin-right: auto;
+    // margin-left: auto;
+    height: 600px;
     max-width: 1600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/hero-bg-desktop.jpg');
